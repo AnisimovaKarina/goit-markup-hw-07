@@ -15,21 +15,21 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-container">
-        <nav class="header-nav">
-        <a href="/" class="logo"><span class="accent">Web</span>Studio</a>
-        <ul class="site-nav list">
-            <li class="link-header"><a href="" class="link current">Студія</a></li>
-            <li class="link-header"><a href="./portfolio.html" class=" link">Портфоліо</a></li>
-            <li class="link-header"><a href="" class=" link">Контакти</a></li>
+    <header class="header">
+        <div class="container header__container">
+        <nav class="navigation">
+        <a href="/" class="logo navigation__logo logo--color--dark"><span class="accent">Web</span>Studio</a>
+        <ul class="menu list">
+            <li class="menu__link"><a href="" class="link current">Студія</a></li>
+            <li class="menu__link"><a href="./portfolio.html" class=" link">Портфоліо</a></li>
+            <li class="menu__link"><a href="" class=" link">Контакти</a></li>
         </ul>
         </nav>
-        <ul class="adress-header list">
-           <li class="header-item"><a href="mailto:info@devstudio.com" class="header-link link"><svg class="header-icon" width="16" height="12">
+        <ul class="address list">
+           <li class="address__item"><a href="mailto:info@devstudio.com" class="address__link link"><svg class="address__icon" width="16" height="12">
             <use href="./images/icons.svg#icon-mail"></use>
         </svg>info@devstudio.com</a></li>
-           <li class="header-item"><a href="tel:+380961111111" class="header-link link"><svg class="header-icon" width="16" height="12">
+           <li class="address__item"><a href="tel:+380961111111" class="address__link link"><svg class="address__icon" width="16" height="12">
             <use href="./images/icons.svg#icon-smartphone"></use>
         </svg>+38 096 111 11 11</a></li> 
         </ul>
@@ -42,33 +42,33 @@
             <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <section class="corporation">
+        <section class="tasks">
             <div class="container">
                 <h2 class="visually-hidden">Корпоративна етика</h2>
-                <ul class="corporation-list list">
-                    <li class="corporation-link">
-                        <div class="corporation-icon-item"><a href="" class="corporation-icon-link link"><svg class="corporation-icon" width="70" height="70">
+                <ul class="corporation list">
+                    <li class="corporation__link">
+                        <div class="corporation__icon"><a href="" class="link"><svg width="70" height="70">
                         <use href="./images/icons.svg#icon-antenna"></use></svg></a></div>
-                        <h3 class="corporation-caption">увага до деталей</h3>
-                        <p class="corporation-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        <h3 class="corporation__caption">увага до деталей</h3>
+                        <p class="corporation__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li class="corporation-link">
-                        <div class="corporation-icon-item"><a href="" class="corporation-icon-link link"><svg class="corporation-icon" width="70" height="70">
+                    <li class="corporation__link">
+                        <div class="corporation__icon"><a href="" class="link"><svg width="70" height="70">
                         <use href="./images/icons.svg#icon-clock"></use></svg></a></div>
-                        <h3 class="corporation-caption">пунктуальність</h3>
-                        <p class="corporation-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        <h3 class="corporation__caption">пунктуальність</h3>
+                        <p class="corporation__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li class="corporation-link">
-                        <div class="corporation-icon-item"><a href="" class="corporation-icon-link link"><svg class="corporation-icon" width="70" height="70">
+                    <li class="corporation__link">
+                        <div class="corporation__icon"><a href="" class="link"><svg width="70" height="70">
                         <use href="./images/icons.svg#icon-diagram"></use></svg></a></div>
-                        <h3 class="corporation-caption">планування</h3>
-                        <p class="corporation-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        <h3 class="corporation__caption">планування</h3>
+                        <p class="corporation__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="corporation-link">
-                        <div class="corporation-icon-item"><a href="" class="corporation-icon-link link"><svg class="corporation-icon" width="70" height="70">
+                    <li class="corporation__link">
+                        <div class="corporation__icon"><a href="" class="link"><svg width="70" height="70">
                         <use href="./images/icons.svg#icon-astronaut"></use></svg></a></div>
-                        <h3 class="corporation-caption">сучасні технології</h3>
-                        <p class="corporation-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        <h3 class="corporation__caption">сучасні технології</h3>
+                        <p class="corporation__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
             </div>
@@ -224,24 +224,24 @@
         </section>
         <section class="clients">
             <div class="container">
-                <h2 class="clients-hidden">Постійні клієнти</h2>
-                <ul class="clients-list list">
-                    <li class="clients-icon-item"><a href="" class="clients-icon-link link"><svg class="clients-icon" width="106" height="60">
+                <h2 class="clients__hidden">Постійні клієнти</h2>
+                <ul class="clients__list list">
+                    <li class="clients__link"><a href="" class="clients__item link"><svg class="clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo1"></use>
                     </svg></a></li>
-                    <li class="clients-icon-item"><a href="" class="clients-icon-link link"><svg class="clients-icon" width="106" height="60">
+                    <li class="clients__link"><a href="" class="clients__item link"><svg class="clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo2"></use>
                     </svg></a></li>
-                    <li class="clients-icon-item"><a href="" class="clients-icon-link link"><svg class="clients-icon" width="106" height="60">
+                    <li class="clients__link"><a href="" class="clients__item link"><svg class="clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo3"></use>
                     </svg></a></li>
-                    <li class="clients-icon-item"><a href="" class="clients-icon-link link"><svg class="clients-icon" width="106" height="60">
+                    <li class="clients__link"><a href="" class="clients__item link"><svg class="clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo4"></use>
                     </svg></a></li>
-                    <li class="clients-icon-item"><a href="" class="clients-icon-link link"><svg class="clients-icon" width="106" height="60">
+                    <li class="clients__link"><a href="" class="clients__item link"><svg class="clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo5"></use>
                     </svg></a></li>
-                    <li class="clients-icon-item"><a href="" class="clients-icon-link link"><svg class="clients-icon" width="106" height="60">
+                    <li class="clients__link"><a href="" class="clients__item link"><svg class="clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo6"></use>
                     </svg></a></li>
                 </ul>
@@ -251,7 +251,7 @@
     <footer class="footer">
        <div class="footer-container container">
             <div class="container-address">
-                <a href="/" class="logo-footer"><span class="accent">Web</span>Studio</a>
+                <a href="/" class="logo-footer logo--color--light"><span class="accent">Web</span>Studio</a>
                 <address class="address-footer">
                 <ul class="nav list">
                     <li class="nav-link"><a href="https://goo.gl/maps/p6rWdTMNFXtJnuZH9" target="_blank" rel="noopener noreferrer nofollow" class="nav-address">м. Київ, пр-т Лесі Українки, 26</a></li>

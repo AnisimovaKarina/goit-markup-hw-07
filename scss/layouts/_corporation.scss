@@ -1,4 +1,4 @@
-.corporation-icon-item {
+.corporation__icon {
     height: 120px;
     @include align;
     justify-content: center;
@@ -7,28 +7,28 @@
     margin-bottom: 30px;
 }
 
-.corporation-list {
+.corporation {
     display: flex;
     gap: 30px;
 }
 
-.corporation-link {
+.corporation__link {
     width: calc((100% - 90px)/4)
 }
 
-.corporation {
+.tasks {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.corporation-caption {
+.corporation__caption {
     margin-bottom: 10px;
     color: var(--title-text-color);
     @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
 }
 
-.corporation-text {
+.corporation__text {
     color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.71;

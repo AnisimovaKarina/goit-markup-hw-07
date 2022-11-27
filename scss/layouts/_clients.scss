@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 }
 
-.clients-hidden {
+.clients__hidden {
     margin-bottom: 50px;
 
     color: var(--title-text-color);
@@ -11,17 +11,17 @@
     @include font(700, 36px, 1.16, 0.03em);
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     gap: 30px;
 }
 
-.clients-icon-item {
+.clients__link {
     width: calc((100% - 150px) / 6);
     height: 92px;
 }
 
-.clients-icon-link {
+.clients__item {
     @include align;
     justify-content: center;
     border: 1px solid #AFB1B8;
@@ -34,11 +34,11 @@
     }
 }
 
-.clients-icon {
+.clients__icon {
     fill: #AFB1B8;
     transition: fill 250ms linear;
-    .clients-icon-link:hover &,
-    .clients-icon-link:focus & {
+    .clients__link:hover &,
+    .clients__link:focus & {
     fill: var(--acent-color);
     }
 }

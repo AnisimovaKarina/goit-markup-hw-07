@@ -328,14 +328,24 @@ body {
   pointer-events: none;
 }
 
-.site-header {
+.logo--color--light {
+  color: var(--acent-text-color);
+}
+
+.logo--color--dark {
+  color: var(--logo-header);
+}
+
+.header {
   background-color: var(--acent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.logo {
+.navigation__logo {
   margin-right: 93px;
-  color: var(--logo-header);
+}
+
+.logo {
   text-decoration: none;
   font-family: "raleway", sans-serif;
   font-weight: 700;
@@ -348,12 +358,12 @@ body {
   color: var(--acent-color);
 }
 
-.site-nav {
+.menu {
   display: flex;
   gap: 30px;
 }
 
-.link-header {
+.menu__link {
   position: relative;
 }
 
@@ -369,32 +379,32 @@ body {
   background-color: var(--acent-color);
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.adress-header {
+.address {
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
 
-.header-icon {
+.address__icon {
   align-items: center;
   margin-right: 10px;
   transition: fill 250ms linear;
 }
-.adress-header .link:hover .header-icon, .adress-header .link:focus .header-icon {
+.address .link:hover .address__icon, .address .link:focus .address__icon {
   fill: var(--acent-color);
 }
 
-.site-nav .link {
+.menu .link {
   color: var(--title-text-color);
   display: block;
   font-weight: 500;
@@ -405,15 +415,15 @@ body {
   padding-bottom: 32px;
   transition: color 250ms linear;
 }
-.site-nav .link:hover, .site-nav .link:focus {
+.menu .link:hover, .menu .link:focus {
   color: var(--acent-color);
 }
 
-.site-nav .link.current {
+.menu .link.current {
   color: var(--acent-color);
 }
 
-.adress-header .link {
+.address .link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -421,7 +431,7 @@ body {
   letter-spacing: 0.02em;
   transition: color 250ms linear;
 }
-.adress-header .link:hover, .adress-header .link:focus {
+.address .link:hover, .address .link:focus {
   color: var(--acent-color);
 }
 
@@ -470,7 +480,7 @@ body {
   cursor: pointer;
 }
 
-.corporation-icon-item {
+.corporation__icon {
   height: 120px;
   display: flex;
   align-items: center;
@@ -480,21 +490,21 @@ body {
   margin-bottom: 30px;
 }
 
-.corporation-list {
+.corporation {
   display: flex;
   gap: 30px;
 }
 
-.corporation-link {
+.corporation__link {
   width: calc((100% - 90px) / 4);
 }
 
-.corporation {
+.tasks {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.corporation-caption {
+.corporation__caption {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -504,7 +514,7 @@ body {
   text-transform: uppercase;
 }
 
-.corporation-text {
+.corporation__text {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -571,6 +581,7 @@ body {
 }
 
 .team-link {
+  width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -648,7 +659,7 @@ body {
   padding-bottom: 94px;
 }
 
-.clients-hidden {
+.clients__hidden {
   margin-bottom: 50px;
   color: var(--title-text-color);
   text-align: center;
@@ -658,17 +669,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
 }
 
-.clients-icon-item {
+.clients__link {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.clients-icon-link {
+.clients__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -678,15 +689,15 @@ body {
   height: 100%;
   transition: border-color 250ms linear;
 }
-.clients-icon-link:hover, .clients-icon-link:focus {
+.clients__item:hover, .clients__item:focus {
   border-color: var(--acent-color);
 }
 
-.clients-icon {
+.clients__icon {
   fill: #AFB1B8;
   transition: fill 250ms linear;
 }
-.clients-icon-link:hover .clients-icon, .clients-icon-link:focus .clients-icon {
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: var(--acent-color);
 }
 
@@ -697,7 +708,6 @@ body {
 }
 
 .logo-footer {
-  color: var(--acent-text-color);
   text-decoration: none;
   font-family: "raleway", sans-serif;
   font-weight: 700;
